@@ -1,0 +1,14 @@
+# Set execution policy for PowerShell
+powershell -Command "Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser"
+
+# Activate the virtual environment
+call "path_to_conda\Scripts\activate.bat" myenv
+
+# Navigate to the directory containing the Python script
+cd "path_to_script_directory"
+
+# Execute the Python script
+python script_name.py
+
+# Pause to keep the command prompt window open
+pause
